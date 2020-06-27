@@ -1,9 +1,13 @@
+// this project using reactBootstrap, material ui library
 import React from 'react';
 import ReactDOM from 'react-dom';
+// add reactBootstrap
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+// add fonts
+import './constant/fonts/din-next-lt-w23-medium.ttf'
 ReactDOM.render(
   <React.StrictMode>
     <App />

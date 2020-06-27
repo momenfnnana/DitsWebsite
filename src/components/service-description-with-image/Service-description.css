@@ -1,0 +1,45 @@
+h4 {
+  color: #2364d8;
+}
+
+body {
+  font-family: DIN_NEXT;
+}
+
+.description {
+  text-align: start;
+  color: #5b5b5b;
+}
+
+image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media (max-width: 991px) {
+  .text {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .description {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Service-description.css.map */

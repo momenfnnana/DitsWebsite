@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'DIN_NEXT';
+  src: local('DIN_NEXT'), url('./constant/fonts/din-next-lt-w23-medium.ttf') format('truetype');
+}
