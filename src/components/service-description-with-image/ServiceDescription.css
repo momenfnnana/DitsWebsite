@@ -1,31 +1,21 @@
-h4 {
+.title {
   color: #2364d8;
+  font-size: 26px;
+  text-align: right;
 }
 
 body {
   font-family: DIN_NEXT;
 }
 
-.description {
-  text-align: start;
+.desc {
   color: #5b5b5b;
+  text-align: right;
 }
 
 image {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.right-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 
 @media (max-width: 991px) {
@@ -38,8 +28,11 @@ image {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .description {
+  .desc {
+    text-align: center;
+  }
+  .title {
     text-align: center;
   }
 }
-/*# sourceMappingURL=Service-description.css.map */
+/*# sourceMappingURL=ServiceDescription.css.map */

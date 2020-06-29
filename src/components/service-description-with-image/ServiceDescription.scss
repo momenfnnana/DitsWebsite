@@ -1,28 +1,28 @@
-h4 {
+.title {
   color: #2364d8;
+  font-size: 26px;
+  text-align: right;
 }
 body {
   font-family: DIN_NEXT;
 }
-.description {
-  text-align: start;
+.desc {
   color: #5b5b5b;
+  text-align: right;
 }
 image {
   object-fit: cover;
 }
-.right-section{
-    display: flex;
-    align-items:flex-start;
-    justify-content: start;
-}
 @media (max-width: 991px) {
-.text{
+  .text {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-}
-.description{
+  }
+  .desc {
     text-align: center;
-}
+  }
+  .title {
+    text-align: center;
+  }
 }

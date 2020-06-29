@@ -1,0 +1,34 @@
+.title-for-service {
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #2364d8;
+  color: #2364d8;
+  font-size: 26px;
+}
+.list {
+  color: #5b5b5b;
+}
+.btn-primary {
+  background-color: #2364d8;
+}
+.description {
+  text-align: right;
+}
+.details-button {
+  box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.25) !important;
+}
+@media (max-width: 991px) {
+  .title-for-service {
+    align-self: center;
+    border: none;
+  }
+  .iconWithTitle {
+    justify-content: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .button {
+    justify-content: center;
+  }
+}

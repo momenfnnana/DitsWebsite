@@ -1,0 +1,19 @@
+.OurMission {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2364d890), to(#2364d8)), url("../../constant/images/ourMission.png");
+  background-image: linear-gradient(0deg, #2364d890 0, #2364d8), url("../../constant/images/ourMission.png");
+  background-size: cover;
+}
+
+.ourMissionTitle {
+  color: #fff;
+  font-size: 26px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.ourMissionDescription {
+  color: #fff;
+  font-size: 18px;
+  text-align: start;
+}
+/*# sourceMappingURL=OurMission.css.map */
