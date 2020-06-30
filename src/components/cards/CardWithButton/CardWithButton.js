@@ -1,18 +1,14 @@
 import React from "react";
 import "./CardWithButton.css";
+import Button from "../../button/Button";
 
 const CardWithButton = ({ img, cardTitle, cardDetials }) => {
   return (
-    <div className="custome-card px-0">
-      <img src={img} className="w-100 image-card" />
+    <div className="custome-card px-0 my-3">
+      <img src={img} className="w-100 image-card" alt="news"/>
       <h1 className="card-title mt-3">{cardTitle}</h1>
       <p className="card-description my-4">{cardDetials}</p>
-      <button
-        type="button"
-        class="btn btn-primary rounded-pill px-4 details-button mb-4"
-      >
-        قراءة المزيد
-      </button>
+      <Button title="قراءة المزيد"/>
     </div>
   );
 };

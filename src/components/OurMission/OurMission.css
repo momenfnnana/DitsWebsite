@@ -1,6 +1,6 @@
 .OurMission {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2364d890), to(#2364d8)), url("../../constant/images/ourMission.png");
-  background-image: linear-gradient(0deg, #2364d890 0, #2364d8), url("../../constant/images/ourMission.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2364d899), to(#2364d8)), url("../../constant/images/ourMission.png");
+  background-image: linear-gradient(0deg, #2364d899 0, #2364d8), url("../../constant/images/ourMission.png");
   background-size: cover;
 }
 
@@ -15,5 +15,10 @@
   color: #fff;
   font-size: 18px;
   text-align: start;
+}
+
+.image {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=OurMission.css.map */

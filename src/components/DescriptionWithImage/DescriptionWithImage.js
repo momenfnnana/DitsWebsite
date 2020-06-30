@@ -2,17 +2,20 @@ import React from "react";
 import "./DescriptionWithImage.css";
 import { MdContentCopy, MdDateRange } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import Button from "../button/Button";
 const DescriptionWithImage = ({
   serviceType,
   serviceExample,
   servicePart,
   date,
   description,
-  img
+  img,
+  classNameText,
+  classNameImage
 }) => {
   return (
     <div className="row mb-5">
-      <div className="d-flex flex-column justify-content-center col-12 col-lg-6 order-2 order-lg-1">
+      <div className={classNameText}>
         <h4 className="title-for-service d-flex px-3">{serviceType}</h4>
         <div className="mx-3 mt-3">
           <div className="d-flex iconWithTitle">
@@ -33,17 +36,12 @@ const DescriptionWithImage = ({
           </div>
           <p className="description">{description}</p>
           <div className="button d-flex">
-            <button
-              type="button"
-              class="btn btn-primary rounded-pill px-4 details-button"
-            >
-              عرض التفاصيل
-            </button>
+            <Button title="عرض التفاصيل"/>
           </div>
         </div>
       </div>
-      <div className="col-12 col-lg-6 order-1 order-lg-2">
-        <img src={img} style={{ objectFit: "cover", width: "100%" }} />
+      <div className={classNameImage}>
+        <img src={img} style={{ objectFit: "cover", width: "100%" }} alt="project-example"/>
       </div>
     </div>
   );

@@ -4,8 +4,10 @@ import ServiceDescription from "../../service-description-with-image/ServiceDesc
 import Card from "../../cards/card-with-title/Card-with-title";
 import DescriptionWithImage from "../../DescriptionWithImage/DescriptionWithImage";
 import OurMission from "../../OurMission/OurMission";
-import CardWithButton from "../../cards/fully-card/CardWithButton";
+import CardWithButton from "../../cards/CardWithButton/CardWithButton";
 import { IoIosArrowBack } from "react-icons/io";
+import GetNotification from "../../getNotification/getNotification";
+import PersonCard from "../../cards/card-with-person/PersonCard"
 const Index = () => {
   return (
     <div className="w-100" dir="rtl">
@@ -47,9 +49,12 @@ const Index = () => {
           </div>
         </div>
         <div>
-          <div className="d-flex mt-5">
-            <h4 className="our-project-title w-100 d-flex justify-content-end">نبذة من اعمالنا</h4>
-            <div className="d-flex w-75 justify-content-end">
+          <div className="mt-5 flex-1">
+            <h4 className="our-project-title d-flex justify-content-center ">
+              نبذة من اعمالنا
+            </h4>
+            <p className="mt-4 we-interest">نحن نهتم بأدق التفاصيل </p>
+            <div className="d-flex justify-content-center justify-content-md-end showMoreContainer">
               <h6 className="showMore">عرض الكل</h6>
               <IoIosArrowBack size="20px" />
             </div>
@@ -64,6 +69,8 @@ const Index = () => {
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
             img={require("../../../constant/images/web-develop.png")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
           />
           <DescriptionWithImage
             serviceType="برمجة تطبيق موسيقى"
@@ -75,6 +82,8 @@ const Index = () => {
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
             img={require("../../../constant/images/mobile-develop.png")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-2 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-1 col-12 col-lg-6"
           />
           <DescriptionWithImage
             serviceType="تصميم وتحريك فيديو موشن جرافيك"
@@ -86,33 +95,48 @@ const Index = () => {
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
             img={require("../../../constant/images/motion-graphic.png")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
           />
         </div>
       </div>
       <OurMission />
-      <div className="container d-flex my-4">
-        <div className="col-12 col-lg-4 col-md-6">
-          <CardWithButton
-            img={require("../../../constant/images/card-image1.png")}
-            cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-          />
+      <div className="container">
+        <div className="mt-5">
+          <h4 className="last-technology-update">
+            المدونة (آخر الأخبار والمقالات)
+          </h4>
+          <div className="d-flex justify-content-center justify-content-md-end showMoreContainer2">
+            <h6 className="showMore2">عرض المزيد</h6>
+            <IoIosArrowBack size="20px" />
+          </div>
         </div>
-        <div className="col-12 col-lg-4 col-md-6">
-          <CardWithButton
-            img={require("../../../constant/images/card-image2.png")}
-            cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-          />
-        </div>
-        <div className="col-12 col-lg-4 col-md-6">
-          <CardWithButton
-            img={require("../../../constant/images/card-image3.png")}
-            cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-          />
+        <div className="row">
+          <div className="col-12 col-lg-4 col-md-6">
+            <CardWithButton
+              img={require("../../../constant/images/card-image1.png")}
+              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+            />
+          </div>
+          <div className="col-12 col-lg-4 col-md-6">
+            <CardWithButton
+              img={require("../../../constant/images/card-image2.png")}
+              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+            />
+          </div>
+          <div className="col-12 col-lg-4 col-md-6">
+            <CardWithButton
+              img={require("../../../constant/images/card-image3.png")}
+              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+            />
+          </div>
         </div>
       </div>
+      <GetNotification />
+      <PersonCard />
     </div>
   );
 };
