@@ -1,9 +1,9 @@
 .full-ball {
   border-width: 1rem;
-  border: solid #F2F2F2;
+  border: solid #f2f2f2;
   z-index: 0;
   position: absolute;
-  right: 31rem;
+  right: 37%;
   top: 0rem;
   height: 30rem;
   width: 30rem;
@@ -154,6 +154,7 @@
           transform: rotate(90deg);
   position: absolute;
   top: -8rem;
+  left: 24.5rem;
 }
 
 .inside-circle5 {
@@ -162,5 +163,48 @@
   background-color: #fff;
   height: 10rem;
   width: 10rem;
+}
+
+@media (max-width: 1440px) {
+  .full-ball {
+    right: 32.5%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .full-ball {
+    right: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .full-ball {
+    top: 4%;
+    right: 32%;
+    height: 21rem;
+    width: 21rem;
+  }
+  .Specialize-title-ball-father {
+    height: 18rem;
+    width: 18rem;
+  }
+  .full-inside-circle1 {
+    margin-left: 9rem;
+  }
+  .full-inside-circle3 {
+    margin-left: -5rem;
+  }
+  .full-inside-circle2 {
+    margin-left: -3rem;
+  }
+  .full-inside-circle4 {
+    position: absolute;
+    top: 14.7rem;
+    left: 5rem;
+  }
+  .full-inside-circle5 {
+    top: -10rem;
+    left: 24.5rem;
+  }
 }
 /*# sourceMappingURL=Specialize-us.css.map */

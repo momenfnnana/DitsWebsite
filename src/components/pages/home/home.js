@@ -15,7 +15,7 @@ const Home = () => {
       <div dir="rtl" className="container">
         <ServiceDescription
           className1="col-lg-9 order-2 order-lg-1"
-          className="col-lg-3 order-1 order-lg-2 d-flex justify-content-center"
+          className2="col-lg-3 order-1 order-lg-2 d-flex justify-content-center"
           img={require("../../../constant/images/Group.png")}
           title="من نحن"
           subTitle="شركة ديتس, شركة متخصصة في تطوير تكنولوجيا المعلومات ، أطلقت خدماتها مع نظام احترافي متكامل ومبتكر للحلول الإبداعية. لقد قدمنا ​​اسمًا لامعًا جدًا لشركتنا في مجال تكنولوجيا المعلومات من خلال مواكبة أحدث التقنيات.
