@@ -5,7 +5,7 @@ const GetNotification = () => {
   return (
     <div className="get-notification py-3">
       <div className="container">
-        <MdEmail className="mail-icon" size="50px" />
+        <MdEmail className="mail-icon" size="42px" />
         <h4 className="notification-title mb-4">ابق على علم بكل جديد</h4>
         <h6 className="subTitle mb-3">تابع الاخبار والعروض اولاً بأول</h6>
         <div className="d-flex input-container w-50 rounded-pill align-items-center mx-auto">

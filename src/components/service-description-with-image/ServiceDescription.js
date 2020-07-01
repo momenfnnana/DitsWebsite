@@ -1,18 +1,21 @@
 import React from "react";
 import "./ServiceDescription.css";
-const ServiceDescription = ({ title, subTitle, img }) => {
+const ServiceDescription = ({
+  className1,
+  className2,
+  title,
+  subTitle,
+  img,
+}) => {
   return (
-    <div
-      className="row align-items-center"
-      dir="rtl"
-    >
-      <div className="col-lg-9 order-2 order-lg-1">
+    <div className="row align-items-center" dir="rtl">
+      <div className={className1}>
         <div>
           <h4 className="title mb-3 my-3">{title}</h4>
           <p className="desc">{subTitle}</p>
         </div>
       </div>
-      <div className="col-lg-3 order-1 order-lg-2 d-flex justify-content-center">
+      <div className={className2}>
         <img
           src={img}
           alt="for-description"

@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
-import Index from "./components/pages/home/home";
+// import Specialize from "./components/Specialize-us/Specialize-us";
+import OurService from "./components/pages/OurService/ourService";
+// import Home from "./components/pages/home/home";
 
 function App() {
   return (
     <div className="App">
-      <Index />
+      {/* <Home /> */}
+      <OurService />
+      {/* <Specialize /> */}
     </div>
   );
 }

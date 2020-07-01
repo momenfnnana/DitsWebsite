@@ -5,14 +5,19 @@
 }
 .ourMissionTitle {
   color: #fff;
-  font-size: 26px;
+  // font-size: 26px;
   align-self: flex-start;
 }
 .ourMissionDescription {
   color: #fff;
-  font-size: 18px;
+  // font-size: 18px;
   text-align: start;
 }
-.image{
+.image {
   object-fit: contain;
+}
+@media (max-width: 991px) {
+  .ourMissionTitle{
+    align-self: center;
+  }
 }

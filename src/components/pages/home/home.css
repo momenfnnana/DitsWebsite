@@ -1,6 +1,5 @@
 .our-project-title {
   color: #2364d8;
-  font-size: 26px;
   text-align: center;
   position: relative;
 }
@@ -31,12 +30,21 @@
 .showMoreContainer2 {
   margin-top: -35px;
   margin-bottom: 35px;
-  color: #2364D8;
+  color: #2364d8;
 }
 
 .last-technology-update {
   color: #2364d8;
-  font-size: 26px;
   text-align: right;
+}
+
+.subtitle {
+  color: #919ab4;
+}
+
+.our-Service {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=home.css.map */
