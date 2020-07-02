@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./home.scss";
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import Card from "../../cards/card-with-title/Card-with-title";
 import DescriptionWithImage from "../../DescriptionWithImage/DescriptionWithImage";
@@ -7,10 +7,17 @@ import OurMission from "../../OurMission/OurMission";
 import CardWithButton from "../../cards/CardWithButton/CardWithButton";
 import { IoIosArrowBack } from "react-icons/io";
 import GetNotification from "../../getNotification/getNotification";
-import PersonCard from "../../cards/card-with-person/PersonCard"
+import PersonCard from "../../cards/card-with-person/PersonCard";
+import Navbar from "../../navbar/navbar";
+import useSticky from "../../../hooks/useSticky";
+import Header from "../../header/header";
+
 const Index = () => {
+  const { isSticky, element } = useSticky();
   return (
     <div className="w-100" dir="rtl">
+      <Navbar sticky={isSticky} />
+      <Header Element={element} />
       <div dir="rtl" className="container">
         <ServiceDescription
           img={require("../../../constant/images/Group.png")}

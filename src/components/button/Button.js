@@ -1,10 +1,10 @@
 import React from "react";
-import "./Button.css";
+import "./Button.scss";
 const Button = ({title}) => {
   return (
     <button
       type="button"
-      class="btn btn-primary rounded-pill px-4 details-button mb-4"
+      className="btn btn-primary rounded-pill px-4 details-button mb-4"
     >
       {title}
     </button>

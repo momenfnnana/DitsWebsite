@@ -1,5 +1,5 @@
 import React from "react";
-import "./DescriptionWithImage.css";
+import "./DescriptionWithImage.scss";
 import { MdContentCopy, MdDateRange } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import Button from "../button/Button";

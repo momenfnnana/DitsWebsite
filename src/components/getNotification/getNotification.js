@@ -1,5 +1,5 @@
 import React from "react";
-import "./getNotification.css";
+import "./getNotification.scss";
 import { MdEmail } from "react-icons/md";
 const GetNotification = () => {
   return (
@@ -16,7 +16,7 @@ const GetNotification = () => {
           <div className="my-1 mx-1 d-flex align-self-center">
             <button
               type="button"
-              class="btn btn-primary rounded-pill px-4 details-button"
+              className="btn btn-primary rounded-pill px-4 details-button btnSubscribe"
             >
               اشترك
             </button>

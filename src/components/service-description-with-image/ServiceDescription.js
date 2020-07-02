@@ -1,10 +1,11 @@
 import React from "react";
-import "./ServiceDescription.css";
+import "./ServiceDescription.scss";
 const ServiceDescription = ({ title, subTitle, img }) => {
   return (
     <div
       className="row align-items-center"
       dir="rtl"
+      id="aboutUs"
     >
       <div className="col-lg-9 order-2 order-lg-1">
         <div>

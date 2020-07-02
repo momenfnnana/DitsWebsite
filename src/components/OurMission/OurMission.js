@@ -1,5 +1,5 @@
 import React from "react";
-import "./OurMission.css";
+import "./OurMission.scss";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 const OurMission = () => {
   return (

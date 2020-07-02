@@ -1,5 +1,5 @@
 import React from "react";
-import "./PersonCard.css";
+import "./PersonCard.scss";
 import { AiFillStar } from "react-icons/ai";
 
 const PersonCard = () => {
