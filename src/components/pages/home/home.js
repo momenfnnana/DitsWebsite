@@ -20,12 +20,14 @@ const Index = () => {
       <Header Element={element} />
       <div dir="rtl" className="container">
         <ServiceDescription
+          className1="col-lg-9 order-2 order-lg-1"
+          className2="col-lg-3 order-1 order-lg-2 d-flex justify-content-center"
           img={require("../../../constant/images/Group.png")}
           title="من نحن"
           subTitle="شركة ديتس, شركة متخصصة في تطوير تكنولوجيا المعلومات ، أطلقت خدماتها مع نظام احترافي متكامل ومبتكر للحلول الإبداعية. لقد قدمنا ​​اسمًا لامعًا جدًا لشركتنا في مجال تكنولوجيا المعلومات من خلال مواكبة أحدث التقنيات.
 وبإبتكار الشركة للأساليب والتقنيات المهنية في مشاريعها الخاصة وتكامل فريقها، أصبح فريقنا جدير بالثقة وتم تعزيزه من خلال خبرة طويلة. تعاملنا مع العديد من العملاء بما في ذلك المنظمات ووكالات الأنباء والعملاء من جميع أنحاء العالم."
         />
-        <h4 className="title d-flex mt-5 mb-4">خدماتنا</h4>
+        <h4 className="title our-Service mt-5 mb-4">خدماتنا</h4>
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-sm-6 col-lg-4">
             <Card
@@ -75,7 +77,7 @@ const Index = () => {
           إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،  النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
-            img={require("../../../constant/images/web-develop.png")}
+            img={require("../../../constant/images/web-develop.svg")}
             classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
             classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
           />
@@ -143,8 +145,57 @@ const Index = () => {
         </div>
       </div>
       <GetNotification />
-      <PersonCard />
+      <div className="container mt-5">
+        <h4 className="our-project-title d-flex justify-content-center">
+          قالو عنا
+        </h4>
+        <p className="subtitle mt-4">
+          ! آراء زبائننا الكرام ممن وضعوا ثقتهم في خدماتنا , لتكُن أنت التالي
+        </p>
+        <div className="row">
+          <div className="col-12 col-lg-4 col-md-6">
+            <PersonCard
+              img={require("../../../constant/images/face.svg")}
+              name="شركة الوئام للتجارة"
+              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+لقد تم توليد  هذا النص من مولد النص العربى . "
+              color1="#ABBDBA"
+              color2="#FCDD21"
+              color3="#FCDD21"
+              color4="#FCDD21"
+              color5="#FCDD21"
+            />
+          </div>
+          <div className="col-12 col-lg-4 col-md-6">
+            <PersonCard
+              img={require("../../../constant/images/face.svg")}
+              name="شركة الوئام للتجارة"
+              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+لقد تم توليد  هذا النص من مولد النص العربى . "
+              color1="#ABBDBA"
+              color2="#FCDD21"
+              color3="#FCDD21"
+              color4="#FCDD21"
+              color5="#FCDD21"
+            />
+          </div>
+          <div className="col-12 col-lg-4 col-md-6">
+            <PersonCard
+              img={require("../../../constant/images/face.svg")}
+              name="شركة الوئام للتجارة"
+              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+لقد تم توليد  هذا النص من مولد النص العربى . "
+              color1="#ABBDBA"
+              color2="#FCDD21"
+              color3="#FCDD21"
+              color4="#FCDD21"
+              color5="#FCDD21"
+            />
+          </div>
+        </div>
+      </div>
+      <ContactWithUs />
     </div>
   );
 };
-export default Index;
+export default Home;

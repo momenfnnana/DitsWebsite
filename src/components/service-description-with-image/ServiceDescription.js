@@ -13,7 +13,7 @@ const ServiceDescription = ({ title, subTitle, img }) => {
           <p className="desc">{subTitle}</p>
         </div>
       </div>
-      <div className="col-lg-3 order-1 order-lg-2 d-flex justify-content-center">
+      <div className={className2}>
         <img
           src={img}
           alt="for-description"

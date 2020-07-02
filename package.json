@@ -8,16 +8,26 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
+<<<<<<< HEAD
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
+=======
+    "node-sass": "^4.14.1",
+>>>>>>> 5736883edae6af3fcfc4ee6a94870990da09633d
     "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
+<<<<<<< HEAD
     "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16"
+=======
+    "react-scripts": "3.4.1",
+    "react-shapes": "^0.1.0"
+>>>>>>> 5736883edae6af3fcfc4ee6a94870990da09633d
   },
   "scripts": {
     "start": "react-scripts start",

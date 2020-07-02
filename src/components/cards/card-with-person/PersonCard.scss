@@ -1,21 +1,21 @@
-.header-card{
+.full-card {
+  border-radius: 5px;
+  .header-card {
     position: absolute;
     top: -2rem;
     right: 0;
     left: 0;
-}
-
-.image-container{
-    width: 4rem;
-    height: 4rem;
-    background-color: #fff;
-    box-shadow: 0 -0.1rem 1rem rgba(0, 0, 0, 0.06) !important;
-}
-
-.body-card{
-    padding-top: 2.5rem;
-    .name{
-        color: #5B5B5B;
+    .image-container {
+      width: 4rem;
+      height: 4rem;
+      background-color: #fff;
+      box-shadow: 0 -0.1rem 1rem rgba(0, 0, 0, 0.06) !important;
     }
-    // padding-bottom: 0.2rem;
+  }
+}
+.body-card {
+  padding-top: 2.5rem;
+  .name {
+    color: #5b5b5b;
+  }
 }

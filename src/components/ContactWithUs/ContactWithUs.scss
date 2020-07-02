@@ -1,0 +1,35 @@
+.contact-us-title {
+  color: #2364d8;
+  text-align: right;
+}
+.contact-us-subTitle {
+  text-align: right;
+}
+::placeholder {
+  color: #5b5b5b70 !important;
+  font-size: 12px !important;
+}
+.full-form {
+  background-color: #f9f9f9;
+  height: 31rem;
+}
+.text-area {
+  border-radius: 30px;
+}
+.form-side {
+  margin-top: 40px;
+}
+@media (max-width: 991px) {
+  .contact-us-title {
+    text-align: center;
+  }
+  .contact-us-subTitle {
+    text-align: center;
+  }
+  .full-form {
+    height: 55rem;
+  }
+  .form-side {
+    margin-top: 0;
+  }
+}

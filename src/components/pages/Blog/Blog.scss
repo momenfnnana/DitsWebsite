@@ -1,0 +1,25 @@
+.image1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("../../../constant/images/image-slide1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("../../../constant/images/image-slide2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fullSlider{
+    height: 30rem !important;
+}
