@@ -1,0 +1,151 @@
+.content{
+  margin-bottom: 22rem;
+}
+
+.headerImgBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('../../constant/images/primaryBackground.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.header-text,.header-text p {
+  color: #fff !important;
+}
+
+.headerBtn {
+  background-color: #fff !important;
+  border-radius: 50px !important;
+  color: #2364d8 !important;
+  width: 9em;
+  margin-top: 1em;
+  box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.28);
+}
+
+button:focus {
+  outline: 1px dotted !important;
+}
+
+.divImageHeader {
+  position: relative;
+}
+
+.imageHeader {
+  max-height: 74vh;
+  animation: animateUpDown 3.2s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0em;
+  padding: 0 15px;
+}
+
+#particles-js {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .headerImgBackground {
+    min-height: 160vh;
+  }
+  .imageHeader {
+    top:3rem
+  }
+  .content{
+    margin-bottom: 26rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .headerImgBackground {
+    min-height: 130vh;
+  }
+  .imageHeader {
+    top:0rem
+  }
+  .content{
+    margin-bottom: 28rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .imageHeader {
+    top:0rem
+  }
+  .content{
+    margin-bottom: 12rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .headerImgBackground {
+    margin-top: -1rem;
+    min-height: 110vh;
+    // transform: scaleY(1.7);
+  }
+  .content{
+    margin-bottom: 22rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+
+@-webkit-keyframes animateUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes animateUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+

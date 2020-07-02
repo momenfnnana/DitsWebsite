@@ -194,8 +194,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <ContactWithUs />
     </div>
   );
 };
-export default Home;
+export default Index;

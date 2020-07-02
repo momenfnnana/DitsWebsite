@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="760" viewBox="0 0 1366 760">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3132" data-name="Rectangle 3132" width="1366" height="760" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_2019" data-name="Rectangle 2019" width="1382" height="760" transform="translate(8 -17)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.847" y1="0.055" x2="0.09" y2="0.945" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2364d8"/>
+      <stop offset="1" stop-color="#00a1ff"/>
+    </linearGradient>
+  </defs>
+  <g id="primaryBackground" clip-path="url(#clip-path)">
+    <g id="background1" transform="translate(-8 17)" clip-path="url(#clip-path-2)">
+      <path id="Path_2" data-name="Path 2" d="M0,1373.99c0,64.264,158.34,104.785,190.665,74.263,46.31-43.742,116.242-75.163,213.115-31.954,199.384,88.926,356.294,75.755,450.677-156.412,99.28-244.211-18.811-674.621,201.939-758.849,177.145-62.485,191-317.484,187.268-437.726-1.2-38.6-4.206-63.314-4.206-63.314H141.712c-12.477,0-22.593,17.7-22.593,39.523Z" transform="translate(1373.891 -521.172) rotate(90)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_3130" data-name="Rectangle 3130" width="1381" height="761" transform="translate(460 353)" fill="none"/>
+      <rect id="Rectangle_3131" data-name="Rectangle 3131" width="1354" height="749" transform="translate(22 -26)" fill="none"/>
+    </g>
+  </g>
+</svg>

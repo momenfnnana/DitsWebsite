@@ -13,7 +13,7 @@ const ServiceDescription = ({ title, subTitle, img }) => {
           <p className="desc">{subTitle}</p>
         </div>
       </div>
-      <div className={className2}>
+      <div className={'className2'}>
         <img
           src={img}
           alt="for-description"

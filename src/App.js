@@ -7,7 +7,7 @@ function App() {
   // const { isSticky, element } = useSticky()
   return (
     <div className="App">
-      <Blog />
+      <Index />
     </div>
   );
 }
