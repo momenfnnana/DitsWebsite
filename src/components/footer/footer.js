@@ -12,16 +12,16 @@ const Footer = () => {
           src={require("../../constant/images/headerBrand.svg")}
         />
         <div className="d-flex justify-content-center mt-4">
-          <a href="#" className="ml-sm-2 ml-1 ml-md-3">
+          <a href="#" className="ml-sm-2 ml-1">
             <img className="social-media-icon" src={require("../../constant/images/whatsapp.svg")} />
           </a>
-          <a href="#" className="ml-sm-2 ml-1 ml-md-3">
+          <a href="#" className="ml-sm-2 ml-1">
             <img className="social-media-icon" src={require("../../constant/images/twitter.svg")} />
           </a>
-          <a href="#" className="ml-sm-2 ml-1 ml-md-3">
+          <a href="#" className="ml-sm-2 ml-1">
             <img className="social-media-icon" src={require("../../constant/images/facebook.svg")} />
           </a>
-          <a href="#" className="ml-sm-2 ml-1 ml-md-3">
+          <a href="#" className="ml-sm-2 ml-1">
             <img className="social-media-icon" src={require("../../constant/images/instagram.svg")} />
           </a>
         </div>
