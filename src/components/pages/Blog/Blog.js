@@ -1,5 +1,5 @@
 import React from "react";
-import "./Blog.css";
+import "./Blog.scss";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 

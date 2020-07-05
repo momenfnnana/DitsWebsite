@@ -31,7 +31,7 @@
     display: block;
     margin: 0 auto;
     bottom: -5px;
-    transition: all 0.5s;
+    // transition: all 5s;  
   }
 }
 
@@ -137,6 +137,12 @@ button.navbar-toggler .custom-toggler {
       // animation: UpDown 0.7s ease-in-out 0s;
     }
   }
+
+  #navbar {
+    .navbar-nav .active > .nav-link::after {
+      bottom: 3px;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -157,6 +163,12 @@ button.navbar-toggler .custom-toggler {
 
   .navbar-nav .active > .nav-link::after {
     background-color: #2364d8 !important;
+  }
+
+  #navbar {
+    .navbar-nav .active > .nav-link::after {
+      bottom: 3px;
+    }
   }
 }
 
@@ -185,6 +197,12 @@ button.navbar-toggler .custom-toggler {
     a.nav-link {
       color: #2364d8 !important;
       animation: UpDown 0.7s ease-in-out 0s;
+    }
+  }
+
+  #navbar {
+    .navbar-nav .active > .nav-link::after {
+      bottom: -5px;
     }
   }
 }

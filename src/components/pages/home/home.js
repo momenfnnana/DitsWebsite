@@ -11,6 +11,8 @@ import PersonCard from "../../cards/card-with-person/PersonCard";
 import Navbar from "../../navbar/navbar";
 import useSticky from "../../../hooks/useSticky";
 import Header from "../../header/header";
+import Footer from "../../footer/footer";
+import ContactWithUs from "../../ContactWithUs/ContactWithUs";
 
 const Index = () => {
   const { isSticky, element } = useSticky();
@@ -194,6 +196,8 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <ContactWithUs />
+      <Footer />
     </div>
   );
 };

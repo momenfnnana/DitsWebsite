@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from "react";
+// import { useHistory } from "react-router-dom";
+import Blog from "../pages/Blog/Blog";
 import "./navbar.scss";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import {
+//   Link,
+//   DirectLink,
+//   Element,
+//   Events,
+//   animateScroll as scroll,
+//   scrollSpy,
+//   scroller,
+// } from "react-scroll";
 
 const Navbar = ({ sticky, Element }) => {
   const [chosen, setChosen] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
   const [menuStyle, setMenuStyle] = useState("collapse navbar-collapse p-3");
-
   const array = [
-    {string:"الرئيسية",name:"main"},
-    {string:"من نحن",name:"aboutUs"},
-    {string:"خدماتنا",name:"ourServices"},
-    {string:"ما يميزنا",name:"ourAdvantage"},
-    {string:"المدونة",name:"blog"},
-    {string:"أعمالنا",name:"ourJobs"},
-    {string:"قالوا عنا",name:"sayAboutUs"},
-    {string:"تواصل معنا",name:"ContactUs"},
+    { string: "الرئيسية", name: "main" },
+    { string: "من نحن", name: "aboutUs" },
+    { string: "خدماتنا", name: "ourServices" },
+    { string: "ما يميزنا", name: "ourAdvantage" },
+    { string: "المدونة", name: "blog" },
+    { string: "أعمالنا", name: "ourJobs" },
+    { string: "قالوا عنا", name: "sayAboutUs" },
+    { string: "تواصل معنا", name: "ContactUs" },
   ];
 
   const isActive = (i) => {
@@ -99,9 +101,18 @@ const Navbar = ({ sticky, Element }) => {
                       setChosen(i);
                     }}
                   >
-                    <a  className="nav-link" href={`#${item.name}`}>
-                      {item.string}
-                    </a>
+                    {item.name === "blog" ? (
+                      <a
+                        className="nav-link"
+                        href={`#${item.name}`}
+                      >
+                        {item.string}
+                      </a>
+                    ) : (
+                      <a className="nav-link" href={`#${item.name}`}>
+                        {item.string}
+                      </a>
+                    )}
                   </li>
                 </>
               ))}
