@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,uBAAuB,EAAE,IAAI;EAC7B,sBAAsB,EAAE,IAAI;CAC/B;;AACD,AAAA,WAAW,CAAA;EACP,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;CACjB;;AACD,AAAA,iBAAiB,CAAA;EACb,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;CACjB",
-    "sources": [
-        "CardWithButton.scss"
-    ],
-    "names": [],
-    "file": "CardWithButton.css"
-}

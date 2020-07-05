@@ -1,5 +1,5 @@
 import React from "react";
-import "./Special-circle.css";
+import "./Special-circle.scss";
 import { Triangle } from "react-shapes";
 
 const SpecialCircle = ({ fullInsideCircle, insideCircle, img, text }) => {

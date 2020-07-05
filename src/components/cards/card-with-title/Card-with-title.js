@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardWithTitle.css";
+import "./CardWithTitle.scss";
 const Card = ({ img, title, subTitle }) => {
   return (
       <div className="d-flex justify-content-center align-items-center custome-card flex-column mx-1 py-3 row my-3">

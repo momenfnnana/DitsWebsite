@@ -1,5 +1,5 @@
 import React from "react";
-import "./ourService.css";
+import "./ourService.scss";
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import Card from "../../cards/card-with-title/Card-with-title";
 import ContactWithUs from "../../ContactWithUs/ContactWithUs";

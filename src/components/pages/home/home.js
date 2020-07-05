@@ -71,7 +71,7 @@ const Index = () => {
             </div>
           </div>
           <DescriptionWithImage
-            serviceType="برمجة موقع نمو المنشئات"
+            headingLine="برمجة موقع نمو المنشئات"
             serviceExample="مشروع : موقع نمو المنشآت"
             servicePart="التصنيف : برمجة مواقع الويب"
             date="التاريخ : 11/2/2020"
@@ -84,7 +84,7 @@ const Index = () => {
             classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
           />
           <DescriptionWithImage
-            serviceType="برمجة تطبيق موسيقى"
+            headingLine="برمجة تطبيق موسيقى"
             serviceExample="مشروع : تطبيق  سوشيال ميديا موسيقية"
             servicePart="التصنيف : برمجة تطبيقات الجوال"
             date="التاريخ : 11/2/2020"
@@ -97,7 +97,7 @@ const Index = () => {
             classNameImage=" order-1 order-lg-1 col-12 col-lg-6"
           />
           <DescriptionWithImage
-            serviceType="تصميم وتحريك فيديو موشن جرافيك"
+            headingLine="تصميم وتحريك فيديو موشن جرافيك"
             serviceExample="مشروع :  فيديو موشن للبنك الوطني الإسلامي"
             servicePart="التصنيف : موشن جرافيك"
             date="التاريخ : 11/2/2020"

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Specialize-us.css";
+import "./Specialize-us.scss";
 import SpecialCircle from "./Special-circle/Special-circle";
 const Specialize = () => {
   return (

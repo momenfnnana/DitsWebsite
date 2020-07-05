@@ -25,7 +25,7 @@ const Footer = () => {
             <img className="social-media-icon" src={require("../../constant/images/instagram.svg")} />
           </a>
         </div>
-        <div className="links-footer d-flex justify-content-center mb-3 mt-1">
+        <div className="links-footer d-flex justify-content-center mb-3 mt-2">
           <a href="#" className="ml-3">
             <span style={{color:'#5B5B5B'}}>من نحن</span>
           </a>

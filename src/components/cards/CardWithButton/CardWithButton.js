@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardWithButton.css";
+import "./CardWithButton.scss";
 import Button from "../../button/Button";
 
 const CardWithButton = ({ img, cardTitle, cardDetials }) => {
