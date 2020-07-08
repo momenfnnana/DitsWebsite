@@ -4,9 +4,9 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 const ContactWithUs = () => {
   return (
-    <div className="full-form">
+    <div className="full-form" id="ContactUs">
       <div className="container">
-        <div className="row">
+        <div className="row" >
           <div className="col-12 col-lg-4  my-5">
             <h4 className="contact-us-title">تواصل معنا</h4>
             <p className="contact-us-subTitle my-4">

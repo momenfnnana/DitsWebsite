@@ -1,0 +1,34 @@
+.list {
+  color: #5b5b5b;
+}
+
+.btn-primary {
+  background-color: #2364d8;
+}
+
+.description {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .titleH {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    border: none;
+  }
+  .iconWithTitle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=DescriptionWithImage.css.map */

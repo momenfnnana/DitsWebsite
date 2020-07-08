@@ -29,7 +29,7 @@ const Index = () => {
           subTitle="شركة ديتس, شركة متخصصة في تطوير تكنولوجيا المعلومات ، أطلقت خدماتها مع نظام احترافي متكامل ومبتكر للحلول الإبداعية. لقد قدمنا ​​اسمًا لامعًا جدًا لشركتنا في مجال تكنولوجيا المعلومات من خلال مواكبة أحدث التقنيات.
 وبإبتكار الشركة للأساليب والتقنيات المهنية في مشاريعها الخاصة وتكامل فريقها، أصبح فريقنا جدير بالثقة وتم تعزيزه من خلال خبرة طويلة. تعاملنا مع العديد من العملاء بما في ذلك المنظمات ووكالات الأنباء والعملاء من جميع أنحاء العالم."
         />
-        <h4 className="title our-Service mt-5 mb-4">خدماتنا</h4>
+        <h4 id="ourServices" className="title our-Service mt-5 mb-4">خدماتنا</h4>
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-sm-6 col-lg-4">
             <Card
@@ -60,7 +60,7 @@ const Index = () => {
           </div>
         </div>
         <div>
-          <div className="mt-5 flex-1">
+          <div className="mt-5 flex-1" id="ourJobs">
             <h4 className="our-project-title d-flex justify-content-center ">
               نبذة من اعمالنا
             </h4>
@@ -113,8 +113,8 @@ const Index = () => {
       </div>
       <OurMission />
       <div className="container">
-        <div className="mt-5">
-          <h4 className="last-technology-update">
+        <div className="mt-5" >
+          <h4 className="last-technology-update" id="blog">
             المدونة (آخر الأخبار والمقالات)
           </h4>
           <div className="d-flex justify-content-center justify-content-md-end showMoreContainer2">
@@ -148,7 +148,7 @@ const Index = () => {
       </div>
       <GetNotification />
       <div className="container mt-5">
-        <h4 className="our-project-title d-flex justify-content-center">
+        <h4 id="sayAboutUs" className="our-project-title d-flex justify-content-center">
           قالو عنا
         </h4>
         <p className="subtitle mt-4">

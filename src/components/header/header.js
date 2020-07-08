@@ -16,7 +16,7 @@ const Header = ({ Element }) => {
   // }, []);
 
   return (
-    <div className="content">
+    <div className="content" id="main">
       <div className="container">
         <div className="headerImgBackground">
         <Particles

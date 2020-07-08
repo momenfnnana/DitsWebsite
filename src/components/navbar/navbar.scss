@@ -22,6 +22,11 @@
     font-size: 1rem;
   }
 
+  .nav-link:hover{
+    opacity: 0.4;
+    transition: all 0.3s;
+  }
+
   .navbar-nav .active > .nav-link::after {
     content: "";
     width: 39.65px;
@@ -98,7 +103,7 @@
 
 .show {
   // transition: linear 5s !important;
-  animation: UpDown 0.7s ease-in-out 0s;
+  animation: UpDownMenu 0.2s ease-in-out 0s;
 }
 
 button.navbar-toggler .custom-toggler {
@@ -118,7 +123,7 @@ button.navbar-toggler .custom-toggler {
     background-color: #fff !important;
     position: absolute;
     z-index: 1;
-    top: 5.31em;
+    top: 4.21em;
     left: 0;
     right: 0;
     box-shadow: 0 0.7rem 0.5rem rgba(0, 0, 0, 0.15) !important;
@@ -151,7 +156,7 @@ button.navbar-toggler .custom-toggler {
     color: #000 !important;
     position: absolute;
     z-index: 1;
-    top: 5.31em;
+    top: 4.21em;
     left: 0;
     right: 0;
     box-shadow: 0 0.7rem 0.5rem rgba(0, 0, 0, 0.15) !important;
@@ -218,5 +223,14 @@ button.navbar-toggler .custom-toggler {
   
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes UpDownMenu {
+  0% {
+    transform: translateY(-5px)
+  }
+  
+  100% {
+    transform: translateY(0)
   }
 }

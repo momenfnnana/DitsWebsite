@@ -1,0 +1,53 @@
+body img, p, h1, h2, h3, h4, h5, h6, span, li, a {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.brand-footer {
+  max-width: 35%;
+}
+
+.rightImg {
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.links-footer {
+  font-size: 85%;
+}
+
+.copy-rights {
+  font-size: 70%;
+}
+
+.leftImg {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.social-media-icon {
+  max-width: 80%;
+}
+
+.d-flex a {
+  text-decoration: none;
+}
+
+.d-flex a:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=footer.css.map */

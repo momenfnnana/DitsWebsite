@@ -1,0 +1,15 @@
+.image-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card-title {
+  font-size: 17px;
+  color: #5B5B5B;
+}
+
+.card-description {
+  font-size: 12px;
+  color: #5B5B5B;
+}
+/*# sourceMappingURL=CardWithButton.css.map */
