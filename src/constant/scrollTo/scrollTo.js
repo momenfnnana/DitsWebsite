@@ -19,7 +19,7 @@ function scrollTo(id) {
     return;
   }
   // top position relative to the document
-  var pos = $id.offsetTop - (window.outerHeight / 2 - 50);
+  var pos = $id.offsetTop - (window.outerHeight / 4 - 50);
   window.scrollTo({
     top: pos,
     behavior: 'smooth',

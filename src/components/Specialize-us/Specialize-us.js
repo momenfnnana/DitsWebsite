@@ -7,7 +7,7 @@ const Specialize = () => {
   AOS.init();
   return (
     <div dir="rtl" className="d-flex justify-content-center specialize-us-section">
-      <div className="row">
+      <div id="ourAdvantage" className="row">
         <div
           className="full-ball rounded-circle d-flex justify-content-center align-items-center">
           <div
@@ -32,6 +32,7 @@ const Specialize = () => {
             className="fullInsideCircle2"
             data-aos="fade-up-left"
             data-aos-duration="1000"
+            
           >
             <SpecialCircle
               fullInsideCircle="InsideCircle2"

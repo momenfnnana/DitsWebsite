@@ -1,18 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import { useHistory } from "react-router-dom";
 import "./navbar.scss";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "../../constant/scrollTo/scrollTo";
-
-// import {
-//   Link,
-//   DirectLink,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller,
-// } from "react-scroll";
 
 const Navbar = ({ sticky, Element }) => {
   const [chosen, setChosen] = useState(0);
@@ -110,7 +99,7 @@ const Navbar = ({ sticky, Element }) => {
                 </div>
               ))}
             </ul>
-            <button
+            <a
               id="registerByEmail"
               type="button"
               className={
@@ -118,9 +107,10 @@ const Navbar = ({ sticky, Element }) => {
                   ? "mt-4 mt-lg-0 d-none d-lg-block btn rounded-pill px-3 mr-lg-auto mx-auto"
                   : "mt-4 mt-lg-0 d-none btn rounded-pill px-3 mr-lg-auto mx-auto"
               }
+              href="#registerNow"
             >
               اشترك بريدياً معنا
-            </button>
+            </a>
           </div>
         </div>
       </nav>

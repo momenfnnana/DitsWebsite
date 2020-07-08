@@ -5,7 +5,6 @@ const ServiceDescription = ({ title, subTitle, img, className1, className2 }) =>
     <div
       className="row align-items-center"
       dir="rtl"
-      id="aboutUs"
     >
       <div className={className1}>
         <div>

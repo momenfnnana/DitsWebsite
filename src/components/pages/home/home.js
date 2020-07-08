@@ -18,6 +18,16 @@ import 'aos/dist/aos.css';
 const Index = () => {
   const { isSticky, element } = useSticky();
   AOS.init();
+  const array = [
+    { string: "الرئيسية", name: "main" },
+    { string: "من نحن", name: "aboutUs" },
+    { string: "خدماتنا", name: "ourServices" },
+    { string: "ما يميزنا", name: "ourAdvantage" },
+    { string: "المدونة", name: "blog" },
+    { string: "أعمالنا", name: "ourJobs" },
+    { string: "قالوا عنا", name: "sayAboutUs" },
+    { string: "تواصل معنا", name: "ContactUs" },
+  ];
   return (
     <div className="w-100" dir="rtl">
       <Navbar sticky={isSticky} />
@@ -26,6 +36,7 @@ const Index = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
+          id="aboutUs"
         >
           <ServiceDescription
             className1="col-lg-9 order-2 order-lg-1 about-us-section"
@@ -39,6 +50,7 @@ const Index = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
+          id="ourServices"
         >
           <h4 className="title our-Service mb-4">خدماتنا</h4>
         </div>
@@ -85,7 +97,7 @@ const Index = () => {
         <Specialize />
         </div>
         <div>
-          <div className="projects-section row">
+          <div className="projects-section row" id="ourJobs">
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -165,7 +177,7 @@ const Index = () => {
       </div>
       <OurMission />
       <div className="container">
-        <div className="row Blog-section">
+        <div className="row Blog-section" id="blog">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -228,6 +240,7 @@ const Index = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         className="container rating"
+        id="sayAboutUs"
       >
         <h4 className="our-project-title d-flex justify-content-center">
           قالو عنا
