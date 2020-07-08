@@ -2,10 +2,13 @@ import React from "react";
 import "./Blog.scss";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-// import Navbar from "../../navbar/navbar";
+import Navbar from "../../navbar/navbar";
+import useSticky from "../../../hooks/useSticky";
 
+const Blog = () => {
+  const { isSticky, element } = useSticky();
   const slider = (
-    <AwesomeSlider className="fullSlider">
+    <AwesomeSlider  ref={element} className="fullSlider">
       <div>
         <div className="image1"></div>
       </div>
@@ -17,11 +20,9 @@ import "react-awesome-slider/dist/styles.css";
       </div>
     </AwesomeSlider>
   );
-
-const Blog = () => {
   return (
     <div>
-      {/* <Navbar sticky={true} /> */}
+      <Navbar sticky={isSticky} />
       {/* <h1>Blog screen</h1> */}
       {slider}
     </div>

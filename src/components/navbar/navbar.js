@@ -1,17 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import { useHistory } from "react-router-dom";
-import Blog from "../pages/Blog/Blog";
 import "./navbar.scss";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// import {
-//   Link,
-//   DirectLink,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller,
-// } from "react-scroll";
+import "../../constant/scrollTo/scrollTo";
 
 const Navbar = ({ sticky, Element }) => {
   const [chosen, setChosen] = useState(0);
@@ -59,22 +49,23 @@ const Navbar = ({ sticky, Element }) => {
           {/* logo befor scroll  */}
           <a
             id="brand1"
-            className={sticky ? "d-none navbar-brand" : "navbar-brand"}
-            href="javascript:void(0)"
+            className={sticky ? "d-none navbar-brand scrollTo" : "navbar-brand scrollTo"}
+            href="#main"
+            // href="javascript:void(0)"
           >
             <img
-              style={{maxWidth:"8rem"}}
+              style={{ maxWidth: "10rem" }}
               src={require("../../constant/images/brand.svg")}
             />
           </a>
           {/* logo after scroll */}
           <a
             id="brand2"
-            className={sticky ? "navbar-brand d-block" : "navbar-brand d-none"}
-            href="javascript:void(0)"
+            className={sticky ? "navbar-brand d-block scrollTo" : "navbar-brand d-none scrollTo"}
+            href="#main"
           >
             <img
-              style={{maxWidth:"8rem"}}
+              style={{ maxWidth: "10rem" }}
               src={require("../../constant/images/Logo2.svg")}
             />
           </a>
@@ -94,30 +85,21 @@ const Navbar = ({ sticky, Element }) => {
           <div className={menuStyle} id="navbarNav">
             <ul className="align-items-center navbar-nav sm-header-link p-0">
               {array.map((item, i) => (
-                <>
+                <div key={i}>
                   <li
                     className={isActive(i)}
                     onClick={() => {
                       setChosen(i);
                     }}
                   >
-                    {item.name === "blog" ? (
-                      <a
-                        className="nav-link"
-                        href={`#${item.name}`}
-                      >
-                        {item.string}
-                      </a>
-                    ) : (
-                      <a className="nav-link" href={`#${item.name}`}>
-                        {item.string}
-                      </a>
-                    )}
+                    <a className="nav-link scrollTo" href={`#${item.name}`}>
+                      {item.string}
+                    </a>
                   </li>
-                </>
+                </div>
               ))}
             </ul>
-            <button
+            <a
               id="registerByEmail"
               type="button"
               className={
@@ -125,9 +107,10 @@ const Navbar = ({ sticky, Element }) => {
                   ? "mt-4 mt-lg-0 d-none d-lg-block btn rounded-pill px-3 mr-lg-auto mx-auto"
                   : "mt-4 mt-lg-0 d-none btn rounded-pill px-3 mr-lg-auto mx-auto"
               }
+              href="#registerNow"
             >
               اشترك بريدياً معنا
-            </button>
+            </a>
           </div>
         </div>
       </nav>

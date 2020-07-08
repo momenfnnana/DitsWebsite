@@ -6,14 +6,16 @@ import Navbar from "../../navbar/navbar";
 import HeadingLine from "../../heading-line/headingLine";
 import ContactWithUs from "../../ContactWithUs/ContactWithUs";
 import Footer from "../../footer/footer";
+import Coverflow from "react-coverflow";
 
 const ProjectDetails = (props) => {
+  const widthScreen = window.innerWidth;
   return (
     <div dir="rtl">
       <Navbar sticky={true} />
       <div className="content-page container">
         <div className="row">
-          <div className="col-12 col-lg-6 ">
+          <div className="col-12 col-lg-6 order-2 order-lg-1">
             <HeadingLine
               title="برمجة تطبيق موسيقى"
               className="justify-content-center justify-content-lg-start"
@@ -51,7 +53,7 @@ const ProjectDetails = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 order-1 order-lg-2">
             <img
               src={require("../../../constant/images/mobileDevelop.svg")}
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
@@ -64,6 +66,50 @@ const ProjectDetails = (props) => {
             title="شاشات التطبيق"
             className="justify-content-center justify-content-lg-start"
           />
+          <div dir="ltr">
+            <Coverflow
+              displayQuantityOfSide={(widthScreen>768) ? 2 : 1}
+              navigation={false}
+              infiniteScroll={true}
+              enableHeading={false}
+              media={{
+                "@media (max-width: 900px)": {
+                  width: "100%",
+                  height: "32rem",
+                },
+                "@media (min-width: 900px)": {
+                  width: "100%",
+                  height: "30rem",
+                },
+              }}
+            >
+              <img
+                src={require("../../../constant/images/mobileScreen.svg")}
+                // data-action="https://facebook.github.io/react/"
+                
+              />
+              <img
+                src={require("../../../constant/images/mobileScreen.svg")}
+                // data-action="https://facebook.github.io/react/"
+                
+              />
+              <img
+                src={require("../../../constant/images/mobileScreen.svg")}
+                // data-action="https://facebook.github.io/react/"
+                
+              />
+              <img
+                src={require("../../../constant/images/mobileScreen.svg")}
+                // data-action="https://facebook.github.io/react/"
+                
+              />
+              <img
+                src={require("../../../constant/images/mobileScreen.svg")}
+                // data-action="https://facebook.github.io/react/"
+                
+              />
+            </Coverflow>
+          </div>
         </div>
       </div>
       <ContactWithUs />

@@ -3,7 +3,7 @@ import "./getNotification.scss";
 import { MdEmail } from "react-icons/md";
 const GetNotification = () => {
   return (
-    <div className="get-notification py-3">
+    <div className="get-notification py-3" id="registerNow">
       <div className="container">
         <MdEmail className="mail-icon" size="42px" />
         <h4 className="notification-title mb-4">ابق على علم بكل جديد</h4>
