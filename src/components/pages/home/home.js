@@ -279,7 +279,6 @@ const Index = ({ history }) => {
         </div>
       </div>
       <ContactWithUs />
-      <Footer />
     </div >
   );
 };

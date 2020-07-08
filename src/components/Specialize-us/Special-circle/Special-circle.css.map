@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAKA,AAAA,aAAa,CAAC;EACZ,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACb;;AACD,AAAA,iBAAiB,CAAA;EACf,KAAK,EAAE,OAAO;CACf;;AACD,AAAA,SAAS,CAAA;EACP,YAAY,EAAE,MAAM;EACpB,SAAS,EAAE,cAAc;CAC1B",
-    "sources": [
-        "Special-circle.scss"
-    ],
-    "names": [],
-    "file": "Special-circle.css"
-}

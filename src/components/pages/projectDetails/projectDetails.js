@@ -113,7 +113,6 @@ const ProjectDetails = (props) => {
         </div>
       </div>
       <ContactWithUs />
-      <Footer />
     </div>
   );
 };
