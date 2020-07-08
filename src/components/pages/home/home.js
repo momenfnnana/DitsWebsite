@@ -7,21 +7,19 @@ import OurMission from "../../OurMission/OurMission";
 import CardWithButton from "../../cards/CardWithButton/CardWithButton";
 import GetNotification from "../../getNotification/getNotification";
 import PersonCard from "../../cards/card-with-person/PersonCard";
-import Navbar from "../../navbar/navbar";
+// import Navbar from "../../navbar/navbar";
 import useSticky from "../../../hooks/useSticky";
 import Header from "../../header/header";
 import Footer from "../../footer/footer";
 import ContactWithUs from "../../ContactWithUs/ContactWithUs";
 import Specialize from "../../Specialize-us/Specialize-us";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-const Index = () => {
+import Navbar from "../../navbar/navbar";
+const Index = ({ history }) => {
   const { isSticky, element } = useSticky();
-  AOS.init();
   return (
     <div className="w-100" dir="rtl">
       <Navbar sticky={isSticky} />
-      <Header Element={element} />
+      <Header />
       <div dir="rtl" className="container">
         <div
           data-aos="fade-up"
@@ -82,7 +80,7 @@ const Index = () => {
             العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد"
             />
           </div>
-        <Specialize />
+          <Specialize />
         </div>
         <div>
           <div className="projects-section row">
@@ -102,7 +100,7 @@ const Index = () => {
                 data-aos-duration="1000"
                 className="d-flex flex-row"
               >
-                <h6 className="showMore">عرض الكل</h6>
+                <h6 className="showMore" onClick={() => history.push('/blog')}>عرض الكل</h6>
                 {/* <IoIosArrowBack size="20px" color="#2364D8" /> */}
               </div>
             </div>

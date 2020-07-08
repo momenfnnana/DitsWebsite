@@ -2,6 +2,7 @@ import React from "react";
 import "./Blog.scss";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
+// import Navbar from "../../navbar/navbar";
 
   const slider = (
     <AwesomeSlider className="fullSlider">
@@ -20,6 +21,7 @@ import "react-awesome-slider/dist/styles.css";
 const Blog = () => {
   return (
     <div>
+      {/* <Navbar sticky={true} /> */}
       {/* <h1>Blog screen</h1> */}
       {slider}
     </div>

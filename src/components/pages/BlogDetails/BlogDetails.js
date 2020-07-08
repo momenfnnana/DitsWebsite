@@ -2,9 +2,11 @@ import React from "react";
 import "./BlogDetails.scss";
 import BlogDescription from "../../BlogDescription/BlogDescription";
 import CardWithButton from "../../cards/CardWithButton/CardWithButton";
+import Navbar from "../../navbar/navbar";
 const BlogDetails = () => {
   return (
     <div className="container" dir="rtl">
+      <Navbar sticky={true} />
       <BlogDescription />
       <p className="col-12 blog-content mt-5 mb-3 line-height">
         قامت شركة تويتر بإلغاء إحدى ميزاتها الأصيلة الأسبوع الماضي وذلك بإيقاف
@@ -60,34 +62,34 @@ const BlogDetails = () => {
         فيما أضاف أن المنصة مستمرة بإرسال الرسائل النصية SMS للمستخدمين بما يخص إجراءات التنبيه والأمان وإعدادات المصادقة المتعبة للحفاظ على حساباتهم.
       </p>
       <div>
-      <h4 className="text-center text-md-right last-technology-update mt-5">
-        مقالات مشابهة
+        <h4 className="text-center text-md-right last-technology-update mt-5">
+          مقالات مشابهة
       </h4>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-lg-4 col-md-6">
-            <CardWithButton
-              img={require("../../../constant/images/card-image1.png")}
-              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            />
-          </div>
-          <div className="col-12 col-lg-4 col-md-6">
-            <CardWithButton
-              img={require("../../../constant/images/card-image2.png")}
-              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            />
-          </div>
-          <div className="col-12 col-lg-4 col-md-6">
-            <CardWithButton
-              img={require("../../../constant/images/card-image3.png")}
-              cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-              cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
-            />
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-4 col-md-6">
+              <CardWithButton
+                img={require("../../../constant/images/card-image1.png")}
+                cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+                cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              />
+            </div>
+            <div className="col-12 col-lg-4 col-md-6">
+              <CardWithButton
+                img={require("../../../constant/images/card-image2.png")}
+                cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+                cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              />
+            </div>
+            <div className="col-12 col-lg-4 col-md-6">
+              <CardWithButton
+                img={require("../../../constant/images/card-image3.png")}
+                cardTitle="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+                cardDetials="ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج ثورة الهواتف القابلة للطي  Z Flip هاتف سامسونج"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );

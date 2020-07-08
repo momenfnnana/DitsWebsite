@@ -2,9 +2,11 @@ import React from 'react'
 import "./OurProject.scss"
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import Card from "../../cards/card-with-title/Card-with-title";
+import Navbar from '../../navbar/navbar';
 const OurProject = () => {
     return (
         <div dir="rtl" className="container">
+            <Navbar sticky={true} />
             <ServiceDescription
                 className1="col-lg-6 order-2 order-lg-1"
                 className2="col-lg-6 order-1 order-lg-2 d-flex justify-content-center"

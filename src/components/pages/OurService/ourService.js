@@ -3,10 +3,12 @@ import "./ourService.scss";
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import Card from "../../cards/card-with-title/Card-with-title";
 import ContactWithUs from "../../ContactWithUs/ContactWithUs";
+import Navbar from "../../navbar/navbar";
 
 const OurService = () => {
   return (
     <div dir="rtl" className="mt-5">
+      <Navbar sticky={true} />
       <div className="container">
         <ServiceDescription
           className1="col-lg-8 order-2 order-lg-1"

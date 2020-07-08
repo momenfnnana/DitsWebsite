@@ -1,10 +1,7 @@
 import React from "react";
 import "./Specialize-us.scss";
 import SpecialCircle from "./Special-circle/Special-circle";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 const Specialize = () => {
-  AOS.init();
   return (
     <div dir="rtl" className="d-flex justify-content-center specialize-us-section">
       <div className="row">
