@@ -3,7 +3,7 @@ import "./OurMission.scss";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 const OurMission = () => {
   return (
-    <div className="OurMission mx-0" dir="rtl">
+    <div className="OurMission mx-0 py-5" dir="rtl">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-4 my-5 d-flex justify-content-center w-100">
@@ -14,7 +14,7 @@ const OurMission = () => {
             />
           </div>
           <div className="col-12 col-lg-8 d-flex flex-column justify-content-center">
-            <h4 className="ourMissionTitle my-5">مهمتنا ورؤيتنا</h4>
+            <h4 className="ourMissionTitle mb-5">مهمتنا ورؤيتنا</h4>
             <div className="d-flex">
               <IoIosArrowDropleftCircle size="30px" color="#fff" />
               <p className="ourMissionDescription mx-2">

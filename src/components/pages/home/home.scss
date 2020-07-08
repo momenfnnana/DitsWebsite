@@ -15,14 +15,21 @@
     color: #70707031;
   }
 }
+.about-us-section{
+  margin-top: 20%;
+}
+.projects-section{
+  margin-top: 20%;
+}
+.Blog-section{
+  margin-top: 10%;
+}
+.rating{
+  margin-top: 5%;
+}
 .showMoreContainer {
   margin-top: -90px;
   margin-bottom: 90px;
-
-  .showMore {
-    font-size: 18px;
-    color: #5b5b5b;
-  }
 }
 .showMoreContainer2 {
   margin-top: -35px;
@@ -31,12 +38,15 @@
 }
 .last-technology-update {
   color: #2364d8;
-  //   font-size: 26px;
-  text-align: right;
 }
 .subtitle {
   color: #919ab4;
 }
 .our-Service{
   align-self: center;
+  margin-top: 10%;
+}
+.showMore {
+  // font-size: 18px;
+  color: #2364D8;
 }

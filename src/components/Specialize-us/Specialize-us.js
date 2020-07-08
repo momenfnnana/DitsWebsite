@@ -1,52 +1,81 @@
 import React from "react";
 import "./Specialize-us.scss";
 import SpecialCircle from "./Special-circle/Special-circle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Specialize = () => {
+  AOS.init();
   return (
-    <div dir="rtl" className="container">
-      <div className="full-ball rounded-circle d-flex justify-content-center align-items-center">
-        <div className="Specialize-title-ball-father rounded-circle d-flex justify-content-center align-items-center">
-          <div className="Specialize-title-ball d-flex justify-content-center align-items-center rounded-circle mx-auto">
-            <h1 className="Specialize-title">ما يميزنا</h1>
+    <div dir="rtl" className="d-flex justify-content-center specialize-us-section">
+      <div className="row">
+        <div
+          className="full-ball rounded-circle d-flex justify-content-center align-items-center">
+          <div
+            className="Specialize-title-ball-father rounded-circle d-flex justify-content-center align-items-center">
+            <div className="Specialize-title-ball d-flex justify-content-center align-items-center rounded-circle mx-auto">
+              <h1 className="Specialize-title">ما يميزنا</h1>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="row around-circle">
-        <div className="col-6 d-flex flex-column align-items-center">
-          <SpecialCircle
-            fullInsideCircle="d-flex my-3 full-inside-circle1"
-            insideCircle="rounded-circle d-flex flex-column justify-content-center align-items-center inside-circle1"
-            img={require("../../constant/images/SpecializeLamp.svg")}
-            text="سنوات من الخبرة"
-          />
-          <SpecialCircle
-            fullInsideCircle="d-flex my-3 full-inside-circle2"
-            insideCircle="rounded-circle d-flex flex-column justify-content-center align-items-center inside-circle2"
-            img={require("../../constant/images/Professional.svg")}
-            text="الإحترافية"
-          />
-        </div>
-        <div className="col-6 d-flex flex-column align-items-center">
-          <SpecialCircle
-            fullInsideCircle="d-flex my-3 full-inside-circle3"
-            insideCircle="rounded-circle d-flex flex-column justify-content-center align-items-center inside-circle3"
-            img={require("../../constant/images/correctlyJob.svg")}
-            text="إتقان العمل"
-          />
-          <SpecialCircle
-            fullInsideCircle="d-flex my-3 full-inside-circle4"
-            insideCircle="rounded-circle d-flex flex-column justify-content-center align-items-center inside-circle4"
-            img={require("../../constant/images/satisfay.svg")}
-            text="مرضاة الزبون هدفنا"
-          />
-        </div>
-        <div className="col-12 d-flex justify-content-center">
-          <SpecialCircle
-            fullInsideCircle="d-flex my-3 full-inside-circle5"
-            insideCircle="rounded-circle d-flex flex-column justify-content-center align-items-center inside-circle5"
-            img={require("../../constant/images/fast.svg")}
-            text="سرعة الأداء"
-          />
+          <div
+            className="fullInsideCircle1"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <SpecialCircle
+              fullInsideCircle="InsideCircle1"
+              img={require('../../constant/images/lamp.svg')}
+              text="سنوات من الخبرة"
+              insideCircle="insideCircle rounded-circle h-75 w-75 d-flex flex-column justify-content-center align-items-center"
+            />
+          </div>
+          <div
+            className="fullInsideCircle2"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          >
+            <SpecialCircle
+              fullInsideCircle="InsideCircle2"
+              img={require('../../constant/images/Professional.svg')}
+              text="الإحترافية"
+              insideCircle="insideCircle rounded-circle h-75 w-75 d-flex flex-column justify-content-center align-items-center"
+            />
+          </div>
+          <div
+            className="fullInsideCircle3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <SpecialCircle
+              fullInsideCircle="InsideCircle3"
+              img={require('../../constant/images/fast.svg')}
+              text="سرعة الأداء"
+              insideCircle="insideCircle rounded-circle h-75 w-75 d-flex flex-column justify-content-center align-items-center"
+            />
+          </div>
+          <div
+            className="fullInsideCircle4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <SpecialCircle
+              fullInsideCircle="InsideCircle4"
+              img={require('../../constant/images/satisfay.svg')}
+              text="مرضاة الزبون هدفنا"
+              insideCircle="insideCircle rounded-circle h-75 w-75 d-flex flex-column justify-content-center align-items-center"
+            />
+          </div>
+          <div
+            className="fullInsideCircle5"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
+            <SpecialCircle
+              fullInsideCircle="InsideCircle5"
+              img={require('../../constant/images/correctlyJob.svg')}
+              text="إتقان العمل"
+              insideCircle="insideCircle rounded-circle h-75 w-75 d-flex flex-column justify-content-center align-items-center"
+            />
+          </div>
         </div>
       </div>
     </div>
