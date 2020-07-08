@@ -9,9 +9,11 @@ body {
 .desc {
   color: #5b5b5b;
   text-align: right;
+  line-height: 35px;
 }
 image {
   object-fit: cover;
+  width: 50%;
 }
 @media (max-width: 991px) {
   .text {
@@ -25,4 +27,7 @@ image {
   .title {
     text-align: center;
   }
+}
+.about-us-section{
+  margin-top: 10%;
 }

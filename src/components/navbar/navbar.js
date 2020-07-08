@@ -63,7 +63,7 @@ const Navbar = ({ sticky, Element }) => {
             href="javascript:void(0)"
           >
             <img
-              className="img-fluid"
+              style={{maxWidth:"8rem"}}
               src={require("../../constant/images/brand.svg")}
             />
           </a>
@@ -74,13 +74,13 @@ const Navbar = ({ sticky, Element }) => {
             href="javascript:void(0)"
           >
             <img
-              className="img-fluid"
+              style={{maxWidth:"8rem"}}
               src={require("../../constant/images/Logo2.svg")}
             />
           </a>
           <button
             id="toggleNavigation"
-            className="navbar-toggler custom-toggler"
+            className="navbar-toggler custom-toggler p-1"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"

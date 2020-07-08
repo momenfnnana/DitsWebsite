@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactWithUs.css";
+import "./ContactWithUs.scss";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 const ContactWithUs = () => {

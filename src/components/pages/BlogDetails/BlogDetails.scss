@@ -1,0 +1,20 @@
+.blog-content {
+    text-align: right;
+}
+@media (max-width: 767px) {
+    .blog-content {
+        text-align: center;
+    }
+}
+.pointer {
+    height: 1rem;
+    width: 1rem;
+    background-color: #2364d8;
+    border-radius: 100px;
+}
+.parts{
+    color: #4D4D4D;
+}
+.line-height{
+    line-height: 35px;
+}
