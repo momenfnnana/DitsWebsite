@@ -1,29 +1,61 @@
 import React from "react";
 import "./Blog.scss";
-import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import CardWithButton from "../../cards/CardWithButton/CardWithButton";
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import imageSlider1 from '../../../constant/images/image-slide1.svg';
+import imageSlider2 from '../../../constant/images/image-slide2.svg'
 const Blog = () => {
   AOS.init();
-  const slider = (
-    <AwesomeSlider className="fullSlider">
-      <div>
-        <div className="image1"></div>
-      </div>
-      <div>
-        <div className="image1"></div>
-      </div>
-      <div>
-        <div className="image2"></div>
-      </div>
-    </AwesomeSlider>
-  );
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <div>
-      {slider}
+      <Slider {...settings}>
+        <div className="slider-container">
+          <div className="image-slider" style={{ backgroundImage: `url(${imageSlider1})` }}></div>
+          <div class="OverLay"></div>
+          <div className="text-slider w-50">
+            <h4 className="text-right">تويتر تُوقف ميزة التنبيه بالتغريدات
+              عبر الرسائل النصية القصيرة</h4>
+            <p className="text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+          </p>
+          </div>
+        </div>
+        <div className="slider-container">
+          <div className="image-slider" style={{ backgroundImage: `url(${imageSlider2})` }}></div>
+          <div class="OverLay"></div>
+          <div className="text-slider w-50">
+            <h4 className="text-right">تويتر تُوقف ميزة التنبيه بالتغريدات
+              عبر الرسائل النصية القصيرة</h4>
+            <p className="text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+          </p>
+          </div>
+        </div>
+        <div className="slider-container">
+          <div className="image-slider" style={{ backgroundImage: `url(${imageSlider1})` }}></div>
+          <div class="OverLay"></div>
+          <div className="text-slider w-50">
+            <h4 className="text-right">تويتر تُوقف ميزة التنبيه بالتغريدات
+              عبر الرسائل النصية القصيرة</h4>
+            <p className="text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+          </p>
+          </div>
+        </div>
+      </Slider>
       <div className="container">
         <div className="row">
           <h4 className="col-12 d-felx title mt-5">المقالات الأحدث</h4>

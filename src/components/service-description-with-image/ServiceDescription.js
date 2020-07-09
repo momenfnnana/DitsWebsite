@@ -6,15 +6,20 @@ const ServiceDescription = ({ title, subTitle, img, className1, className2 }) =>
       className="row align-items-center service-description"
       dir="rtl"
     >
-      <div className={`${className1}`}>
-          <h4 className="title mb-3 my-3">{title}</h4>
-          <p className="desc">{subTitle}</p>
+      <div
+        className={`${className1}`}>
+        <h4 className="title mb-3 my-3">{title}</h4>
+        <p className="desc">{subTitle}</p>
       </div>
-      <div className={`d-flex justify-content-center ${className2}`}>
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        id="aboutUs"
+        className={`d-flex justify-content-center align-items-center mt-auto ${className2}`}>
         <img
           src={img}
           alt="for-description"
-          className="image w-75 d-felx justify-content-center align-items-center"
+          className="image"
         />
       </div>
     </div>

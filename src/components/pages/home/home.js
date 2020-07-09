@@ -21,20 +21,14 @@ const Index = ({ history }) => {
       <Navbar sticky={isSticky} />
       <Header Element={element} />
       <div dir="rtl" className="container">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          id="aboutUs"
-        >
-          <ServiceDescription
-            className1="col-lg-9 order-2 order-lg-1 about-us-section"
-            className2="col-lg-3 order-1 order-lg-2 d-flex justify-content-center"
-            img={require("../../../constant/images/Group.png")}
-            title="من نحن"
-            subTitle="شركة ديتس, شركة متخصصة في تطوير تكنولوجيا المعلومات ، أطلقت خدماتها مع نظام احترافي متكامل ومبتكر للحلول الإبداعية. لقد قدمنا ​​اسمًا لامعًا جدًا لشركتنا في مجال تكنولوجيا المعلومات من خلال مواكبة أحدث التقنيات.
+        <ServiceDescription
+          className1="col-lg-9 order-2 order-lg-1 about-us-section"
+          className2="col-lg-3 order-1 order-lg-2 d-flex justify-content-center"
+          img={require("../../../constant/images/Group.png")}
+          title="من نحن"
+          subTitle="شركة ديتس, شركة متخصصة في تطوير تكنولوجيا المعلومات ، أطلقت خدماتها مع نظام احترافي متكامل ومبتكر للحلول الإبداعية. لقد قدمنا ​​اسمًا لامعًا جدًا لشركتنا في مجال تكنولوجيا المعلومات من خلال مواكبة أحدث التقنيات.
 وبإبتكار الشركة للأساليب والتقنيات المهنية في مشاريعها الخاصة وتكامل فريقها، أصبح فريقنا جدير بالثقة وتم تعزيزه من خلال خبرة طويلة. تعاملنا مع العديد من العملاء بما في ذلك المنظمات ووكالات الأنباء والعملاء من جميع أنحاء العالم."
-          />
-        </div>
+        />
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -107,60 +101,51 @@ const Index = ({ history }) => {
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <DescriptionWithImage
-              headingLine="برمجة موقع نمو المنشئات"
-              serviceExample="مشروع : موقع نمو المنشآت"
-              servicePart="التصنيف : برمجة مواقع الويب"
-              date="التاريخ : 11/2/2020"
-              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+          <DescriptionWithImage
+            ImageAnimationDirection="fade-right"
+            textAnimationDirection="fade-left"
+            headingLine="برمجة موقع نمو المنشئات"
+            serviceExample="مشروع : موقع نمو المنشآت"
+            servicePart="التصنيف : برمجة مواقع الويب"
+            date="التاريخ : 11/2/2020"
+            description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
           إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،  النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
-              img={require("../../../constant/images/web-develop.svg")}
-              classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
-              classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
-            />
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <DescriptionWithImage
-              headingLine="برمجة تطبيق موسيقى"
-              serviceExample="مشروع : تطبيق  سوشيال ميديا موسيقية"
-              servicePart="التصنيف : برمجة تطبيقات الجوال"
-              date="التاريخ : 11/2/2020"
-              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            img={require("../../../constant/images/web-develop.svg")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
+          />
+          <DescriptionWithImage
+            ImageAnimationDirection="fade-left"
+            textAnimationDirection="fade-right"
+            headingLine="برمجة تطبيق موسيقى"
+            serviceExample="مشروع : تطبيق  سوشيال ميديا موسيقية"
+            servicePart="التصنيف : برمجة تطبيقات الجوال"
+            date="التاريخ : 11/2/2020"
+            description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
           إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،  النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
-              img={require("../../../constant/images/mobile-develop.png")}
-              classNameText="d-flex flex-column justify-content-center order-2 order-lg-2 col-12 col-lg-6"
-              classNameImage=" order-1 order-lg-1 col-12 col-lg-6"
-            />
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <DescriptionWithImage
-              headingLine="تصميم وتحريك فيديو موشن جرافيك"
-              serviceExample="مشروع :  فيديو موشن للبنك الوطني الإسلامي"
-              servicePart="التصنيف : موشن جرافيك"
-              date="التاريخ : 11/2/2020"
-              description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            img={require("../../../constant/images/mobile-develop.png")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-2 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-1 col-12 col-lg-6"
+          />
+          <DescriptionWithImage
+            ImageAnimationDirection="fade-right"
+            textAnimationDirection="fade-left"
+            headingLine="تصميم وتحريك فيديو موشن جرافيك"
+            serviceExample="مشروع :  فيديو موشن للبنك الوطني الإسلامي"
+            servicePart="التصنيف : موشن جرافيك"
+            date="التاريخ : 11/2/2020"
+            description="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
           إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،  النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص
           ، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
           "
-              img={require("../../../constant/images/motion-graphic.png")}
-              classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
-              classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
-            />
-          </div>
+            img={require("../../../constant/images/motion-graphic.png")}
+            classNameText="d-flex flex-column justify-content-center order-2 order-lg-1 col-12 col-lg-6"
+            classNameImage=" order-1 order-lg-2 col-12 col-lg-6"
+          />
         </div>
       </div>
       <OurMission />

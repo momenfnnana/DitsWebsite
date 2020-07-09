@@ -14,10 +14,15 @@ const DescriptionWithImage = ({
   img,
   classNameText,
   classNameImage,
+  ImageAnimationDirection,
+  textAnimationDirection
 }) => {
   return (
     <div className="row mb-5">
-      <div className={classNameText}>
+      <div
+        data-aos={textAnimationDirection}
+        data-aos-duration="500"
+        className={classNameText}>
         <HeadinLine title={headingLine} className="titleH" />
         <div className="mx-3 mt-3">
           <div className="d-flex iconWithTitle">
@@ -42,7 +47,10 @@ const DescriptionWithImage = ({
           </div>
         </div>
       </div>
-      <div className={classNameImage}>
+      <div
+        data-aos={ImageAnimationDirection}
+        data-aos-duration="1300"
+        className={classNameImage}>
         <img
           src={img}
           style={{ objectFit: "cover", width: "100%" }}
