@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.scss";
-import "react-awesome-slider/dist/styles.css";
+// import "react-awesome-slider/dist/styles.css";
 import CardWithButton from "../../cards/CardWithButton/CardWithButton";
 import ServiceDescription from "../../service-description-with-image/ServiceDescription";
 import AOS from 'aos';
